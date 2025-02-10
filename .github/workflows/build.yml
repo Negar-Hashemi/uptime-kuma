@@ -30,8 +30,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-        npm install --force
-        npx playwright install 
+          npm install --force
+          npx playwright install 
 
       - name: Testing on OS (${{ matrix.os }}) with Node.js (version ${{ matrix.node-version }}) attempt ${{ matrix.attempt }}
         run: |
